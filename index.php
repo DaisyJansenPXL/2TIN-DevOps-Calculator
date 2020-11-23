@@ -35,6 +35,23 @@
 
                 echo "<h2>The result of adding $n1 and $n2 is $result";
             }
+
+            if(isset($_POST['subtract'])){
+                $n1 = $_POST['number1'];
+                $n2 = $_POST['number2'];
+                $calc = new Calculator();
+                $result = $calc->subtract($n1, $n2);
+               
+                echo "<h2>The result of subtracting $n1 and $n2 is $result";
+            }
+
+            if(isset($_POST['multiply'])){
+                $n1 = $_POST['number1'];
+                $n2 = $_POST['number2'];
+                $calc = new Calculator();
+                $result = $calc->multiply($n1, $n2);
+                echo "<h2>The result of multiplying $n1 and $n2 is $result";
+             }
         ?>
         <script src="assets/js/bootstrap.min.js" ></sccript>
     </body>
